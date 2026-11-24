@@ -18,7 +18,7 @@
     regexp: '127.0.0.1'
     replace: '0.0.0.0'
 
-- name: change protected mode to no  
+- name: change protected mode to no  #changes enitre line in a filed
   lineinfile:
     path: /etc/redis/redis.conf
     regexp: '^#?protected-mode yes'
