@@ -1,0 +1,7 @@
+- name: restart nginx
+  service:
+    name: Nginx
+    state: restarted
+
+#handlers are notifuers  when there is a change in particular task , if we want to notify or inform other task we can usee handlers
+#for ex if there is any change in nginx config we can notify nginx restart handler
