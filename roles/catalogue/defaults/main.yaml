@@ -1,5 +1,6 @@
 course: ansible
 duration: 10 hrs
+trainer: sivakumar.M
 
 
 #vars and defaults folders are for checking priorities of variables

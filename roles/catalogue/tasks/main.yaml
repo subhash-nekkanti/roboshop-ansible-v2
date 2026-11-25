@@ -1,6 +1,6 @@
 # - name: check priority of varibales in vars folder and defaults folder
 #   debug:
-#     msg: COURSE is {{ course}}, and DURATION is {{duration}}
+#     msg: COURSE is {{ course}}, and DURATION is {{duration}}, and trainer was {{ trainer }}
 
 #vars folder has high prority for variables compared to defaults folder
 
