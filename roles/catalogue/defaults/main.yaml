@@ -1,0 +1,6 @@
+course: ansible
+duration: 10 hrs
+
+
+#vars and defaults folders are for checking priorities of variables
+#vars is first priority and defaults is last priority

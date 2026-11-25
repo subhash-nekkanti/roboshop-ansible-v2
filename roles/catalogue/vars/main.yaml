@@ -1,0 +1,5 @@
+course: devops
+duration: 100 hrs
+
+#vars and defaults folders are for checking priorities of varisables
+#vars is first priority and defaults is last priority
