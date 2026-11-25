@@ -1,12 +1,21 @@
 - name: application setup
-  include_role: 
+  include_role:
     name: common
     tasks_from: app-setup
-    
+
+- name: install mysql client
+  package:
+    name: mysql
+    state: present
+
 - name: include java setup
-  include_role: 
+  include_role:
     name: common
     tasks_from: java
+
+- name: load mysql data
+  include_role:
+    name: mysql-data
 
 - name: systemd setup
   include_role:
