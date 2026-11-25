@@ -8,7 +8,7 @@
   dnf:   #when we already know its dnf we can directly use dnf: module. ansible directly executed without searching for os(like dnf for redhat ...etc)
     name: nodejs 
     state: present
-    
-- name: install nodejs dependencies network_performance_options
+
+- name: install nodejs dependencies 
   community.general.npm:
     path: /app

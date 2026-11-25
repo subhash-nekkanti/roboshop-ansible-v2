@@ -35,6 +35,7 @@
   shell: mongosh --host "{{ mongodb_host }}" < /app/db/master-data.js
   when: product_count.stdout | int == 0   #stdout is in string so we cant match string with int so it skips.... so change stdout to int before comparing 
 
-- name: deamon reload
-  systemd_service:
-    daemon_reload: yes
+- name: reload and restart application
+  include_role:
+    name: common
+    tasks_from: restart
