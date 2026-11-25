@@ -49,3 +49,8 @@
 
 - name: validate nginx configuration
   command: nginx -t
+
+- name: restart nginx
+  service:
+    name: Nginx
+    state: restarted
